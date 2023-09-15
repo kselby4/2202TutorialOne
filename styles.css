@@ -1,0 +1,220 @@
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.left-image,
+.right-image {
+    width: 100px; /* Adjust the image width as needed */
+    height: 100px; /* Adjust the image height as needed */
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px; /* Add padding for spacing */
+}
+
+img{
+    border-radius: 150px;
+    height: 300px;
+    width: 300px; 
+    border: 5px solid #aa70c5;
+}
+
+.divider {
+    font-size: 70px;
+    font-family:impact;
+    color: rgb(89, 48, 126);
+    display: flex;
+    align-items: center;
+}
+.divider::before, .divider::after {
+    flex: 1;
+    content: '';
+    padding: 3px;
+    background-color: rgb(165, 114, 184);
+    margin: 5px;
+  }
+
+h2{
+    text-align: center; 
+    font-family:impact;
+    color: rgb(89, 48, 126);
+    font-style:oblique; 
+    font-size:25px;
+    margin: 0;
+    padding: 0;
+}
+.sectionHeader {
+    color: rgb(89, 48, 126);
+   text-align: center;
+   font-size:25px; 
+   padding:1;
+   margin:1;
+   font-family:Impact; 
+
+}
+.heaeder {
+    padding: 20px;
+    background-color: #edd1ff; 
+    border-radius: 20px;
+}
+
+.divider {
+    font-weight: bold; /* Make the text bold */
+}
+
+.sectionText{
+    padding: 0;
+    margin: 5;
+}
+.timeline{
+    background-color: #edd1ff;
+    border-radius: 25px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(240, 185, 243);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgb(252, 238, 247);
+    border: 4px solid #bb8bda;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  hr.rounded {
+    border-top: 8px solid #d0a2d7;
+    border-radius: 5px;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  .right::after {
+    left: -16px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: rgb(194, 123, 218);
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    .container::before {
+      left: 60px;
+      border: medium solid rgb(168, 144, 195);
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+ 
+    .left::after, .right::after {
+      left: 15px;
+    }
+ 
+    .right {
+      left: 0%;
+    }
+  }
+
+  .button {
+    background-color: #a686ca;
+    border: 3px solid #4b1370;
+    color: rgb(79, 45, 97);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    height: 50px;
+    width: 200px;
+  }
+  .twoButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
