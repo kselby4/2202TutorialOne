@@ -4,16 +4,24 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#experince">Education & Work Experience</a>
+        <a href="#contact">Contact Me </a>
+    </div>
     <p>
-        <div class="heaeder">
+        <div class="heaeder" id="home">
             <div class="divider">Kate Selby</div>
-            <h2>Software Engineering Student</h2>
+            <a href="https://www.eng.uwo.ca/undergraduate/programs/software.html" target="_blank" rel="noopener noreferrer">
+                <button class="button1">Software Engineering Student at Western University</button>
+            </a>
         </div>
 
         <hr class="rounded">
     </p>
 
-    <div class="image-container">
+    <div class="image-container" id="aboutme">
         <img src="images/kate.jpeg" alt="Kate's Photo" class="left-image">
         <div class="text-container">
             <h3 class="sectionHeader">About Me</h3>
@@ -24,8 +32,8 @@
 
 
         <hr class="rounded">
-
-        <h3 class="sectionHeader">My Recent Timeline</h3>
+    <div id="experince">
+        <h3 class="sectionHeader">Education & Work Experience</h3>
         <div class="timeline">
             <div class="timeline">
                 <div class="container left">
@@ -35,12 +43,18 @@
                   </div>
                 </div>
                 <div class="container right">
+                    <div class="content">
+                      <h2>June 2022</h2>
+                      <p>Worked at Muskoka Wake as a Water Sports Instructor </p>
+                    </div>
+                </div>
+                <div class="container left">
                   <div class="content">
                     <h2>September 2022</h2>
                     <p>In 2022, I began post-secondary school at the University of Western Ontario, studying software engineering. Soon after I became first year representitive for the Woman in Engineering Club. </p>
                   </div>
                 </div>
-                <div class="container left">
+                <div class="container right">
                     <div class="content">
                       <h2>May 2023</h2>
                       <p>Began an internship as the Development Intern at Berkeley Payments where I worked on developing an automation tool and automated testing. </p>
@@ -48,10 +62,12 @@
                 </div>
             </div>
         </div>
+    </div>
+
         <br>
         <hr class="rounded">
-        <div>
-            <h3 class="sectionHeader">LinkedIn & Resume</h3>
+        <div id="contact">
+            <h3 class="sectionHeader">Contact Me</h3>
             <div class="twoButtons">
                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                     <button class="button">LinkedIn</button>
@@ -59,8 +75,20 @@
                 <a href="images/resume.pdf" download>
                     <button class="button">Download Resume</button>
                 </a>
+                <br>
+                <form  class="form">
+                    <label for="myTextbox">Email Me:</label>
+                    <input type="text" id="myTextbox" name="myTextbox">
+                    <button type="submit" class="button">Submit</button>
+                </form>
             </div>
-
         </div>
+
+        <div>
+            <hr class="rounded">
+            <h1 class="footer">Kate Selby Portfolio</h3>
+        </div>
+        
+
 </body>
 </html>

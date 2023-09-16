@@ -58,7 +58,7 @@ h2{
 }
 .heaeder {
     padding: 20px;
-    background-color: #edd1ff; 
+    background-image:url('images/western.jpeg'); 
     border-radius: 20px;
 }
 
@@ -217,4 +217,70 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .button1 {
+    background-color: #a686ca;
+    border: 3px solid #4b1370;
+    color: rgb(79, 45, 97);
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+    height: 50px;
+    width: 500px;
+    font-family: Impact;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #906d9a;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #cea2e1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #8e4fa5;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #e89cf2;
+    color: white;
+  }
+  .email{
+    background-color: #a686ca;
+    border: 3px solid #4b1370;
+    color: rgb(176, 129, 200);
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+    height: 50px;
+    width: 500px;
+    font-family: Impact;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form{
+    font-family: impact;
+  }
+
+  .footer{
+    font-size: xx-large;
+    font-family: impact;
+    color:rgb(54, 26, 69);
+    text-align: center;
+    background-color: #edd1ff;
   }
